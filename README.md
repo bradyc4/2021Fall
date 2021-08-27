@@ -1,5 +1,5 @@
 # 2021Fall
-![alt text](https://github.com/bradyc4/2021Fall/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/bradyc4/2021Fall/blob/main/selfie.jpg)
 About me
 I’m a Computer Science Major and the courses I’ve taken are as follows: CS1, CS2, CS3, Object Oriented Programming, Assembly, Language Processing, and Software Engineering. I’m experienced in programming with java, a little bit of python, and creating blueprints in Unreal Engine. The programs I’ve made in java include a calculator that reads a string (for instance “2(3) + 4”) and outputs the answer, a visual clock with 3 hands and 12 numbers, and a bank simulator with tellers and customers. In Language Processing I translated programs from java into python; In Software Engineering I collaborated with two other students to make a horror video game in Unreal Engine.
 
