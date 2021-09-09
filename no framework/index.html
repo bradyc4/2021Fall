@@ -8,7 +8,7 @@
     <title>No Framework</title>
 </head>
 <body>
-    <div class="container">
+  <div class="container">
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="https://bulma.io">
@@ -73,11 +73,11 @@
             Hello World
         </h1>
         <p class="subtitle">
-            My first website with <strong>Bulma</strong>!
+            My first website with <strong>Bulma</strong>! {{ `${now}` }}
         </p>
 
         <article class="message is-primary">
-            <div class="message-header">
+            <div class="message-header" :style="` font-size: ${counter}px `" @click="grow()">
               <p>Primary</p>
               <button class="delete" aria-label="delete"></button>
             </div>
@@ -96,9 +96,28 @@
             </div>
           </article>
 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  </div>
+    <script src="https://unpkg.com/vue@next"></script>
     <script>
+        const VM = {
+          data() {
+            return {
+              counter: 0,
+              now: new Date().toLocaleString()
+            }
+          },
+          mounted() {
+            setInterval(() => this.now = new Date().toLocaleString, 1000)
+          },
+          methods: {
+            grow(){
+              this.counter += 10;
+            }
+          }
+        }
+
+        Vue.createApp(VM).mount('.container')
+
         let size = 72;
         $(".message-header p").click(function(){
             size += 10;
