@@ -103,7 +103,7 @@
           data() {
             return {
               counter: 0,
-              now: new Date().toLocaleString()
+              now: 0,
             }
           },
           mounted() {
@@ -121,7 +121,7 @@
         let size = 72;
         $(".message-header p").click(function(){
             size += 10;
-            $(".message-header p").css({ fontSize: size});
+            $(".message-header p").css({ fontSize: size });
         })
         $(".delete").click(function(){
             $(this).closest(".message").slideUp();
