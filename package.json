@@ -6,11 +6,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bradyc4/2021Fall.git"
+    "url": "git+https://github.com/jewpaltz/2021Fall.git"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "4.17.1"
+      "express": "4.17.1"
+  },
+  "devDependencies": {
+      "nodemon": "^2.0.12"
   }
 }
