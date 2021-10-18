@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    This is my actual home page
+    <h1>This is actually the Home Page</h1>
   </div>
 </template>
 
@@ -12,6 +12,7 @@
 export default {
   name: 'Home',
   components: {
+    
   }
 }
 </script>

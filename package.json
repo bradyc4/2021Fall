@@ -2,18 +2,20 @@
   "name": "2021fall",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch server server/index"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bradyc4/2021Fall.git"
+    "url": "git+https://github.com/jewpaltz/2021Fall.git"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-      "express": "4.17.1"
+    "express": "4.17.1",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-      "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12"
   }
 }
