@@ -25,3 +25,20 @@ Content-Type: application/json
 
 ###
 https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+
+###
+POST http://localhost:3100/register
+Content-Type: application/json
+
+    { 
+        "firstName": "Kamala",
+        "lastName": "Harris",
+        "handle": "@vp",
+        "pic": "",
+        "password": "Her",
+        "isAdmin": true,
+        "emails": [
+            "vp@wh.com"
+        ],
+        "following": [ { "handle": "@johnsmith", "isApproved": true }, ]
+    }
