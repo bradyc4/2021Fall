@@ -1,3 +1,7 @@
+const bcrypt = require('bcrypt');
+const { result } = require('lodash');
+const { client } = require('./mongo');
+const collection = client.db(process.env.MONGO_DB).collection('users');
 const list = [
     { 
         firstName: 'Moshe',
@@ -39,9 +43,9 @@ const list = [
 
 ];
 
-module.exports.GetAll = function GetAll() { return list; }
+module.exports.GetAll = function GetAll() { return collection.find().toArray(); }
 
-module.exports.Get = user_id => list[user_id]; 
+module.exports.Get = user_id => collection.findOne({_id: user_id}); 
 
 module.exports.GetByHandle = function GetByHandle(handle) { return ({ ...list.find( x => x.handle == handle ), password: undefined }); } 
 
